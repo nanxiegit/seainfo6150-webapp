@@ -1,18 +1,19 @@
 import React from "react";
 import HTMLText from "../HTMLText/HTMLText";
+import {Route, Switch, Link, useRouteMatch} from "react-router-dom";
 
 const DynamicArticle = (props) => {
   return (
     <article>
-      {/* add extra html with javascript attributes here */}
       <header>
-        <h1>You can take a pie on a plane</h1>
+        <Link to="/articlelist">Back</Link>
+        <h1>{props.article.title}</h1>
         <address>
-          by Cathryn Lindsey (
-          <a href="mailto:cathryn.lindsey@nytimes.com">cathryn.lindsey@nytimes.com</a>)
+          by {props.article.author} (
+          <a href={props.article.authorEmail}>{props.article.authorEmail}</a>)
           <br />
         </address>
-        <time datetime="2018-11-21 14:57:55">November 21st 2018, 2:57 pm </time>
+        <time dateTime={props.article.timeStamp}>{props.article.displayDate}</time>
       </header>
       <HTMLText text={props.article.text} />
     </article>
