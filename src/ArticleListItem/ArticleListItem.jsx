@@ -19,7 +19,7 @@ const ArticleListItem = (props) => {
           url={props.article.image._url}
           title={props.article.title}
         />
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper}  >
           <h2 className={styles.title}>
             <Link
               className={styles.link}
