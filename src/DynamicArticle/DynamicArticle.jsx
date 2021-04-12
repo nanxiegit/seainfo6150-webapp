@@ -10,7 +10,7 @@ const DynamicArticle = (props) => {
       <Link to="/articlelist" className={styles.back}>
         Back
       </Link>
-      <article className={styles.article}>
+      <article  className={styles.article}>
         <header>
           <ArticleImage
             url={props.article.image._url}
@@ -29,7 +29,10 @@ const DynamicArticle = (props) => {
             {props.article.displayDate}
           </time>
         </header>
-        <HTMLText text={props.article.text} />
+        <article  className={styles.container} >
+        <HTMLText text={props.article.text}   />
+        </article>
+
       </article>
     </div>
   );

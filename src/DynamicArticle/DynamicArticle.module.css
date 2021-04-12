@@ -5,7 +5,7 @@
     box-shadow: 0px 0px 10px 5px rgba(204, 0, 0, 0.5);
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    padding: 15px;
+    padding: 10px; 
   }
 
 .back {
@@ -16,3 +16,15 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.container{
+  column-width: 200px;
+  column-rule: 1px solid rgba(255, 255, 255, 0.3);
+  column-gap: 2em;
+  margin: 0 auto;
+  max-width: 960px;
+  border-radius: 2px;
+  padding: 15px;
+
+}
+
